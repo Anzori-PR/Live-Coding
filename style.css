@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #23283C;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #33394E;
+}
+
+header section {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+header .logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: #E8EDFF;
+}
+
+header menu {
+    display: flex;
+    gap: 24px;
+}
+
+header menu h1 {
+    color: #CDD4EC;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.active {
+    color: #829BF3;
+}
+
+/* Main Section */
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main section {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 120px;
+    margin-top: 36px;
+}
+
+.main section h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+/* Card */
+
+.card_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.card {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.card .about {
+    height: 100px;
+    background-color: #33394E;
+    padding: 20px 16px;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: -3px;
+    text-wrap: wrap;
+
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .about h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #E8EDFF;
+    margin-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.card .about p {
+    font-weight: 400;
+    color: green;
+    font-size: 16px;
+}
+
+/* Pagination  */
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 60px;
+}
+
+.pages {
+    width: auto;
+    display: flex;
+    gap: 8px;
+}
+
+.pages li {
+    list-style: none;
+    color: white;
+    width: 28px;
+    height: 28px;
+    background-color: #33394E;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination .pages .activePage {
+    background-color: #3D4A78;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 800px){
+    header section {
+        padding: 0 50px;
+    }
+
+    .main section {
+        padding: 0 50px;
+    }
+
+    .card .about h1 {
+        font-size: 12px;
+    }
+    
+    .card .about p {
+        font-size: 10px;
+    }
+}
